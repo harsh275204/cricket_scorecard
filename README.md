@@ -36,10 +36,4 @@ The core logic relies on **Object-Oriented Programming (OOP)** in JavaScript, ut
 
 The application employs **Dynamic DOM Manipulation** to display live updates (batter names, scorecards, win messages). The entire inning logic is housed within the central **`startInnings()` function** ("sole of the code").
 
----
 
-## 🚧 Challenges Faced
-
-* **State Management Complexity:** Ensuring consistency in saved states across different pages was a significant challenge, mitigated by meticulous testing.
-* **Modularization:** Creating different functions and classes and ensuring they worked together was quite challenging
-* **Input Validation:** Validating user inputs for match setup and checking for incomplete inputs was a necessary and challenging aspect of ensuring website reliability.
