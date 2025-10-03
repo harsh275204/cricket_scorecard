@@ -1,0 +1,28 @@
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#goToSetup {
+	margin-top: 130px;
+	color: black;
+	background-color: rgb(139, 248, 153);
+	width: 300px;
+	height: 50px;
+	border: 2px solid black;
+	border-radius: 30px;
+	font-size: 28px;
+	cursor: pointer;
+	transition: all 0.2s cubic-bezier(0.25, 1.5, 0.5, 1);
+	animation: pop 0.3s ease-in 0s;
+	
+}
+
+#goToSetup:hover {
+	height: 60px;
+	width: 310px;
+	color: white;
+	background-color: rgb(27, 170, 35);
+	box-shadow: 0 0 20px rgba(127, 255, 212, 0.7);
+}

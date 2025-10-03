@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Match Setup</title>
+	<link rel="stylesheet" href="../css/base_styles.css">
+	<link rel="stylesheet" href="../css/setup.css">
+</head>
+<body>
+	<div class="inputBG">
+		<div class="inputContainer" id="teamsInput">
+			<label>Overs </label>
+			<select id="overs">
+				<option value="2">2</option>
+				<option value="1">1</option>
+				<!-- <option value="2">2</option> -->
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5</option>
+				<option value="10">10</option>
+				<option value="20">20</option>
+			</select>
+			<h2>Enter Team Names</h2>
+			<label for="team1">Team 1</label>
+			<input type="text" id="team1Input" name="team1"><br><br>
+			<label for="team2">Team 2</label>
+			<input type="text" id="team2Input" name="team2"><br><br>
+			<div id="errorMsg" style="color: red; font-weight: bold;"></div><br>
+			<input type="button" id="moveToToss" value="Next"><br><br>
+		</div>
+		<div class="inputContainer" id="toss">
+			<h2>Toss</h2>
+			<label for="tossWin">Toss Winner</label>
+			<select id="tossWinner" name="tossWinner">
+				<option value="t1" id="toss_opt1">Team 1</option>
+				<option value="t2" id="toss_opt2">Team 2</option>
+			</select>
+			<br><br>
+			<label for="tossDecision">Toss Decision</label>
+			<select id="tossDecision" name="tossDecision">
+				<option value="bat" id="bat">Bat First</option>
+				<option value="bowl" id="bowl">Bowl First</option>
+			</select><br><br>
+			<input type="button" id="moveToLive" value="Next"><br><br>
+		</div>
+	</div>
+	<script src="../js/score.js"></script>
+</body>
+</html>

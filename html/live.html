@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>live</title>
+	<link rel="stylesheet" href="../css/base_styles.css">
+	<link rel="stylesheet" href="../css/live.css">
+</head>
+<body>
+	<nav id="navBar">
+		<!-- <a href="" id="live_page_at-live" class="active">Live</a>
+		<a href="./scorecard.html" target="_blank" id="scorecard_page_at-live">Scorecard</a>
+		<a href="./summary.html" target="_blank" id="summary_page_at-live">Summary</a> -->
+		<!-- <input type="button" id="live_page_at-live" class="navBar_buttons" value="Live"> -->
+		<input type="button" id="scorecard_at-live" class="navBar_buttons" value="Scorecard">
+		<input type="button" id="summary_at-live" class="navBar_buttons" value="Summary">
+	</nav>
+
+	<div class="inputBG" style="display: none;" id="live_event_input">
+		<div class="inputContainer" id="batter_input">
+			<label>New Batsman</label><br><br>
+			<input type="text" id="newBatsmanInput" name="newBatsman"><br>
+			<p id="bat_inp_error" style="color: red; font-weight: bold;"></p>
+			<input type="button" id="batter_input_button" value="OK">
+		</div>
+		<div class="inputContainer" id="bowler_input">
+			<label>New Bowler</label><br><br>
+			<input type="text" id="newBowlerInput" name="newBowler"><br>
+			<p id="bowl_inp_error" style="color: red; font-weight: bold;"></p>
+			<input type="button" id="bowler_input_button" value="OK">
+		</div>
+	</div>
+
+	<div id="showResult"></div>
+
+	<div id="live">
+		<h1 id="currentScore"></h1>
+		<h3 id="curRR"></h3>
+		<h3 id="reqRR"></h3>
+		<table>
+			<thead>
+				<tr>
+					<th>Batter</th>
+					<th>Runs</th>
+					<th>Balls</th>
+					<th>4s</th>
+					<th>6s</th>
+					<th>Strike Rate</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr id="strikerRow">
+					<td id="striker"></td>
+					<td id="strikerR"></td>
+					<td id="strikerB"></td>
+					<td id="striker4s"></td>
+					<td id="striker6s"></td>
+					<td id="strikerSR"></td>
+				</tr>
+				<tr id="nonStrikerRow">
+					<td id="nonStriker"></td>
+					<td id="nonStrikerR"></td>
+					<td id="nonStrikerB"></td>
+					<td id="nonStriker4s"></td>
+					<td id="nonStriker6s"></td>
+					<td id="nonStrikerSR"></td>
+				</tr>
+			</tbody>
+			<thead>
+				<tr>
+					<th>Bowler</th>
+					<th>Overs</th>
+					<th>Maidens</th>
+					<th>Runs</th>
+					<th>Wickets</th>
+					<th>Economy Rate</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td id="bowler"></td>
+					<td id="bowlerO"></td>
+					<td id="bowlerM"></td>
+					<td id="bowlerR"></td>
+					<td id="bowlerW"></td>
+					<td id="bowlerER"></td>
+				</tr>
+			</tbody>
+		</table>
+		<br>
+		<div id="scoringButtons">
+			<label>Runs : </label>
+			<button id="0run">0</button>
+			<button id="1run">1</button>
+			<button id="2run">2</button>
+			<button id="3run">3</button>
+			<button id="4run">4</button>
+			<button id="6run">6</button>
+			<br>
+		</div>
+		<br>
+		<div id="scoringButtons2">
+			<button id="wicket">Wicket</button>
+			<button id="wide" >Wide</button>
+			<button id="noBall">No Ball</button>			
+		</div>
+
+		
+
+	</div>
+	<script src="../js/score.js"></script>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>ScoreCard</title>
+	<link rel="stylesheet" href="../css/base_styles.css">
+	<link rel="stylesheet" href="../css/scorecard.css">
+</head>
+<body>
+	<nav id="navBar">
+		<!-- <a href="live.html" target="_blank" id="live_page_at-scorecard" class="active">Live</a>
+		<a href="./scorecard.html" id="scorecard_page_at-scorecard">Scorecard</a>
+		<a href="./summary.html" target="_blank" id="summary_page_at-scorecard">Summary</a> -->
+		<input type="button" id="live_page_at-scorecard" class="navBar_buttons" value="Live">
+		<!-- <input type="button" id="scorecard_at-scorecard" class="navBar_buttons" value="Scorecard"> -->
+		<input type="button" id="summary_at-scorecard" class="navBar_buttons" value="Summary">
+	</nav>
+	<br>
+
+	<div id="scoreCard">
+		<div id="score1"></div>
+			<table id="inn1_bat">
+				<thead>
+					<tr id="batterTemplate">
+						<th>Batter</th>
+						<th>Runs</th>
+						<th>Balls</th>
+						<th>4s</th>
+						<th>6s</th>
+						<th>Strike Rate</th>
+					</tr>
+				</thead>
+				<tbody id="batters_1_data"></tbody>
+			</table>
+			<table id="inn1_bowl">
+				<thead>
+					<tr id="bowlerTemplate">
+						<th>Bowler</th>
+						<th>Overs</th>
+						<th>Maidens</th>
+						<th>Runs</th>
+						<th>Wickets</th>
+						<th>Economy Rate</th>
+					</tr>
+				</thead>
+				<tbody id="bowlers_1_data"></tbody>
+			</table>
+		<div id="secondInnScore" style="display: none;">
+			<div id="score2"></div>
+				<table id="inn2_bat">
+					<thead>
+						<tr id="batterTemplate">
+							<th>Batter</th>
+							<th>Runs</th>
+							<th>Balls</th>
+							<th>4s</th>
+							<th>6s</th>
+							<th>Strike Rate</th>
+						</tr>
+					</thead>
+					<tbody id="batters_2_data"></tbody>
+				</table>
+				<table id="inn2_bowl">
+					<thead>
+						<tr id="bowlerTemplate">
+							<th>Bowler</th>
+							<th>Overs</th>
+							<th>Maidens</th>
+							<th>Runs</th>
+							<th>Wickets</th>
+							<th>Economy Rate</th>
+						</tr>
+					</thead>
+					<tbody id="bowlers_2_data"></tbody>
+				</table>
+		</div>
+	</div>
+
+	<script src="../js/score.js"></script>
+</body>
+</html>

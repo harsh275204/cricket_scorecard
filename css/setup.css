@@ -1,0 +1,78 @@
+.form {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: rgba(0,0,0,0.5);
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: -1;
+}
+
+#overs {
+	margin-left: 10px;
+	padding: 3px;
+}
+/* 
+#teamsInput {
+	background-color: #f0fff0;
+	padding: 30px;
+	border-radius: 20px;
+	box-shadow: 0 0 15px rgba(0,0,0,0.4);
+	text-align: center;
+	font-size: 20px;
+	animation: slideIn 0.5s ease-out;
+}
+   */
+
+#teamsInput input[type="text"] {
+	height: 22px;
+	width: 150px;
+	padding-left: 10px;
+	margin-left: 20px;
+	margin-bottom: 10px;
+	border: 1px solid black;
+	border-radius: 10px;
+}
+
+#moveToToss, #moveToLive {
+	padding: 10px 20px;
+	font-size: 18px;
+	border-radius: 10px;
+	border: none;
+	background-color: lightgreen;
+	cursor: pointer;
+	transition: background-color 0.3s;
+}
+
+#moveToToss:hover, #moveToLive:hover {
+	background-color: limegreen;
+	color: white;
+}
+
+/* #toss {
+	/* display: none; */
+	/* background-color: #f0fff0;
+	padding: 30px;
+	border-radius: 20px;
+	box-shadow: 0 0 15px rgba(0,0,0,0.4);
+	text-align: center;
+	font-size: 20px;
+	animation: slideIn 0.5s ease-out; */
+/* } */ 
+/*  */
+
+#toss {
+	display: none;
+}
+
+#toss select {
+	height: 30px;
+	width: 150px;
+	margin-left: 20px;
+	padding-left: 6px;
+	border: 1px solid black;
+	border-radius: 7px;
+}

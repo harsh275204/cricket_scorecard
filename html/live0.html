@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>live</title>
+	<link rel="stylesheet" href="../css/base_styles.css">
+	<!-- <link rel="stylesheet" href="../css/live.css"> -->
+</head>
+<body>
+	<div class="inputBG" id="input_bg">
+		<div class="inputContainer" id="playersInput_1">
+			<h3 id="openers_team1"></h3>
+			<label>Strike Batsman:</label>
+			<input type="text" id="strikeBatsman">
+			<br>
+			<label>Non Strike Batsman:</label>
+			<input type="text" id="nonStrikeBatsman">
+			<br>
+			<h3 id="first_bowler_team1"></h3>
+			<label>Bowler:</label>
+			<input type="text" id="first_bowler">
+			<br>
+			<p id="opener_or_bowler_error" style="color: red; font-weight: bold;"></p>
+			<input type="button" id="startMatch" href="./live.html" value="Start first Inning">
+		</div>
+	</div>
+	<script src="../js/score.js"></script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+body {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+#matchDetails {
+	background-color: #a7d8ef;
+	/* background-color: #b09d9d; */
+	padding: 30px;
+	border-radius: 20px;
+	box-shadow: 0 0 15px rgba(0,0,0,0.4);
+	text-align: center;
+	margin-bottom: 30px;
+	font-size: 25px;
+}
+
+#currentEq {
+	font-size: 30px;
+	color: rgb(12, 240, 16);
+	font-weight: bolder;
+	background-color: rgb(47, 42, 42);
+	padding: 10px;
+	border-radius: 10px;
+}
+
+#reset {
+	padding: 10px 20px;
+	font-size: 21px;
+	border-radius: 10px;
+	border: none;
+	background-color: lightgreen;
+	cursor: pointer;
+	transition: background-color 0.3s;
+}
+
+#reset:hover {
+	background-color: limegreen;
+	color: white;
+}

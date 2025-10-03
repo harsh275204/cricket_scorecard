@@ -1,0 +1,121 @@
+body {
+	display: flex;
+	flex-direction: column;
+	/* justify-content: center; */
+	align-items: center;
+	/* padding: 20px; */
+	gap: 10px;
+}
+
+/* inputContainer css is in base_style.css */
+
+/* newBatsman and newBowler input css in base_style.css */
+
+#live_event_input, #batter_input, #bowler_input {
+	display: none;
+}
+
+.inputContainer {
+	width: 380px;
+	font-size: 20px;
+}
+
+#showResult {
+	display: none;
+	color: rgb(21, 255, 0);
+	font-size: 28px;
+	font-weight: bolder;
+	border: 2px solid black;
+	background-color: #07508c;
+	padding: 15px;
+	border-radius: 10px;
+	animation: slideIn 0.2s ease-out;
+}
+
+table {
+    width: 100%;
+    max-width: 1200px;
+    margin: 20px auto;
+    border-collapse: collapse;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #ffffff;
+    color: #07508c;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+thead {
+    background-color: #07508c;
+    color: white;
+}
+
+th {
+	padding: 10px 12px;
+	text-align: left;
+	font-weight: 600;
+	font-size: 18px;
+	border-bottom: 1px solid black;
+}
+
+td {
+	padding: 10px 12px;
+	text-align: left;
+	font-weight: 550px;
+	font-size: 15px;
+	border-bottom: 1px solid black;
+}
+
+#nonStrikerRow {
+	border-bottom: none;
+}
+
+#striker, #nonStriker, #bowler {
+	font-weight: bold;
+	color: #1272c1;
+}
+
+#scoringButtons, #scoringButtons2{
+	display: flex;
+	max-width: 500px;
+	justify-content: center;
+	align-items: center;
+	margin: auto;
+	font-size: 25px;
+}
+
+button {
+	margin: 0px 3px 0px 3px;
+	background-color: #F2F3AE;
+	cursor: pointer;
+	font-weight: bold;
+	font-size: 16px;
+}
+
+#scoringButtons button {
+	margin-left: 8px;
+	height: 45px;
+	width: 45px;
+	border: 1px solid rgb(8, 0, 117);
+	border-radius: 50%;
+}
+
+#scoringButtons button:hover {
+	color: white;
+	background-color: #cd7518;
+	font-size: 20px;
+}
+
+#scoringButtons2 button {
+	margin-left: 10px;
+	width: 100px;
+	height: 40px;
+	border: 0.2px solid black;
+	border-radius: 30px;
+	background-color: #aed7ef;
+}
+
+#scoringButtons2 button:hover {
+	background-color: #396f8f;
+	color: white;
+}
